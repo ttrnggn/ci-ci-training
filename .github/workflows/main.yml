@@ -24,8 +24,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/ci-cd-training:latest .
-          docker push ghcr.io/${{ github.repository }}/ci-cd-training:latest
+          docker build -t ghcr.io/${{ github.repository }}/ci-ci-training:latest .
+          docker push ghcr.io/${{ github.repository }}/ci-ci-training:latest
   deploy:
       name: Deploy to Kubernetes
       runs-on: ubuntu-latest
