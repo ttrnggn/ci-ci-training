@@ -31,6 +31,9 @@ jobs:
       runs-on: ubuntu-latest
       needs: build
       steps:
+        - name: List files and folders
+          run: ls -R
+          
         - name: Set up Kubernetes CLI
           uses: azure/setup-kubectl@v3
           with:
